@@ -1,0 +1,343 @@
+
+        body{
+            width: 99vw;
+            height: 100%;
+            margin: auto;
+            background-color: rgb(253, 248, 242);
+        }
+
+        .head{
+            display: flex;
+            flex-direction: column;
+            text-shadow: 0px 0px 4px white, 0px 0px 8px white;
+            margin-top: -1vh;
+            height: 30vh;
+            background: rgba(253, 253, 253, 0.5) center/cover no-repeat url(https://wallpaperboat.com/wp-content/uploads/2020/08/12/52469/hogwarts-castle-10.jpg);
+            /* opacity: 0.5; */
+        }
+        
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 6vh 0vw;
+        }
+
+        .h{
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: 'Luxurious Roman', cursive;
+        }
+
+        nav{
+            padding: 10px;
+            /* margin: 1vh; */
+            border-radius: 5px;
+            background-color: rgb(204, 204, 204);   
+        }
+
+        nav a{
+            padding: 20px;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        main{
+            display: flex;
+            padding-top: 20px;
+        }
+ 
+        .side1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 80vh;
+            width: 15vw;
+            margin: 0px 15px;   
+        }
+        button{
+            width: 10vw;
+            border-radius: 5px;
+            background-color: rgb(143, 143, 156);
+            padding: 10px;
+            box-shadow: 1px 1px 8px grey, 0px -1px 8px grey;
+        }
+         button a{
+             color: white;
+             text-decoration: none;
+             font-weight: bolder;
+         }
+         button:hover{
+             cursor: pointer;
+             text-decoration: underline;
+         }
+
+
+        .mid{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 65vw;
+            height: 100%;
+        }
+        .mcg{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(253, 244, 229);
+            border-radius: 8px;   
+            margin-bottom: 5vh;
+            box-shadow: 1px 1px 8px rgb(202, 200, 200), 0px -1px 8px grey;
+        }
+
+        .mcgimg{
+            width: 150px;
+            height: 180px;
+            object-fit: cover;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+
+        .announce{
+            font-size: larger;
+            border-bottom: 2px solid black;
+        }
+
+        .announcehead{
+            border-top: 2px solid black;
+            animation: announcehead 0.5s ease-in 0s infinite forwards;
+            text-decoration: underline;
+        }
+
+        .au li:hover{
+            cursor: default;
+            color: red;
+
+        }
+
+        .new{
+            font-size: 10px;
+            animation: new 0.5s ease-in 0s infinite forwards;
+        }
+
+        @keyframes new{
+            0%{
+                color: black;
+            }
+            
+            50%{
+                background-color: red;
+            }
+
+        }
+
+        @keyframes announcehead{
+            0%{
+                color: red;
+            }
+            50%{
+                color: greenyellow;
+            }
+            100%{
+                color: blue;
+            }
+        }
+
+        .read{
+            font-size: smaller;
+            float: right;
+            margin-bottom: 1vh;
+        }
+
+
+
+        .welcome{
+            width: 65vw;
+            height: 100%;
+        }
+        
+        
+
+        .side2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0px 15px;
+        }
+
+        .side2ad{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55vh;
+            width: 11vw;
+            /* border: 2px solid black; */
+            margin: 8px;
+        }
+        .nimimg{
+            width: 11vw;
+            height: 55vh;
+            object-fit: cover;
+            /* margin: 10px; */
+            /* border: 2px solid black; */
+            border-radius: 3px;
+
+        }
+        .side2content{
+            display: flex;
+            height: 45vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            font-weight: bolder;
+        }
+
+
+
+
+
+.o{
+    animation:o 2s ease-in 0s infinite forwards;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.g{
+    animation:g 2s ease-in 0s infinite forwards;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.w{
+    animation:w 2s ease-in 0s infinite forwards;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.a{
+    animation:a 2s ease-in 0s infinite forwards;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.r{
+    animation:r 2s ease-in 0s infinite forwards;
+    font-weight: bolder;
+    font-size: 25px;
+}
+/* 
+@keyframes o {
+    0%{
+        color: darkgrey;
+        font-family: 'Pushster', cursive;   
+        font-style: normal;
+    }
+    25%{
+        color: violet;
+        font-family: 'Kolker Brush', cursive;
+        font-style: oblique;
+    }
+    75%{
+        color: palevioletred;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-style: italic;
+    }
+    100%{
+        color: darkolivegreen;
+        font-family: 'Moo Lah Lah', cursive;
+        font-style: normal;
+    }  
+}
+
+@keyframes g {
+   
+    0%{
+        color: magenta;
+        font-family: 'Moo Lah Lah', cursive;
+        font-style: normal;
+    }
+    25%{
+        color: darkred;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+        font-style: oblique;
+    }
+    75%{
+        color: darkslateblue;
+        font-family: 'Rock 3D', cursive;
+        font-style: italic;
+    }
+    100%{
+        color: steelblue;
+        font-family: 'Kolker Brush', cursive;
+        font-style: oblique;
+    }
+}
+@keyframes w {
+   
+    0%{
+        color: rgb(21, 58, 58);
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal;
+    }
+    25%{
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+        font-style: oblique;
+    }
+    75%{
+        color: olive;
+        font-family: 'Shizuru', cursive;
+        font-style: normal;
+    }
+    100%{
+        color: seagreen;
+        font-family: 'Yuji Hentaigana Akebono', cursive;
+        font-style: italic;
+    }
+}
+@keyframes a {
+   
+    0%{
+        color: olive;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal;
+    }
+    25%{
+        color: sandybrown;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+        font-style: oblique;
+    }
+    75%{
+        color: burlywood;
+        font-family: 'Moo Lah Lah', cursive;
+        font-style: normal;
+    }
+    100%{
+        color: darkseagreen;
+        font-family: 'Kolker Brush', cursive;
+        font-style: italic;
+    }
+}
+@keyframes r {
+   
+    0%{
+        color: darkorange;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal;
+    }
+    25%{
+        color: slategrey;
+        font-family: 'Yuji Hentaigana Akebono', cursive;
+        font-style: oblique;
+    }
+    75%{
+        color: black;
+        font-family: 'Rock 3D', cursive;
+        font-style: normal;
+    }
+    100%{
+        color: purple;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-style: italic;
+    }
+} */
