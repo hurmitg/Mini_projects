@@ -1,65 +1,48 @@
-var t = false;
-var u = false;
-var c = false;
-var w = false;
-var data = "";
+    var t = false;
+    var u = false;
+    var c = false;
+    var w = false;
+    var data = "";
 
-function text(){
-    t = true;
-    u = false;
-    c = false;
-    w = false;
-    document.getElementById("inn").innerHTML = `<textarea placeholder="Enter Your Text..." id="qrtext"></textarea>`;
+
+
+let textHtml = () => {
+    return `<textarea placeholder="Enter Your Text..." id="qrtext"></textarea>`;
 }
 
-
-function url(){
-    t = false;
-    u = true;
-    c = false;
-    w = false;
-    document.getElementById("inn").innerHTML = `<textarea placeholder="Enter Your Website..." id="qrurl"></textarea>`;
+let urlHtml = () => {
+    return `<textarea placeholder="Enter Your Website..." id="qrurl"></textarea>`;
 }
 
-
-function card(){
-    t = false;
-    u = false;
-    c = true;
-    w = false;
-    document.getElementById("inn").innerHTML = ` <div class="max1">
-        <div class="mini">
-            Name : 
-        </div>
-        <div class="mini">
-            Contact No. : 
-        </div>
-        <div class="mini">
-            Adress : 
-        </div>
-        <div class="mini">
-            Email : 
-        </div>
-        <div class="mini">
-            Website : 
-        </div>
+let cardHtml = () => {
+    return `<div class="max1">
+    <div class="mini">
+        Name : 
     </div>
-    <div class="max2">
-        <input class="cardin" id="name" placeholder="Full Name" type="text">
-        <input class="cardin" id="phone" placeholder="+91 98765-43210" type="number">
-        <input class="cardin" id="adress" placeholder="Enter Your Adress..." type="text">
-        <input class="cardin" id="mail" placeholder="abc@xyz.com" type="email">
-        <input class="cardin" id="site" placeholder="www.abc.in" type="url">
-    </div>  `;
+    <div class="mini">
+        Contact No. : 
+    </div>
+    <div class="mini">
+        Adress : 
+    </div>
+    <div class="mini">
+        Email : 
+    </div>
+    <div class="mini">
+        Website : 
+    </div>
+</div>
+<div class="max2">
+    <input class="cardin" id="name" placeholder="Full Name" type="text">
+    <input class="cardin" id="phone" placeholder="+91 98765-43210" type="number">
+    <input class="cardin" id="adress" placeholder="Enter Your Adress..." type="text">
+    <input class="cardin" id="mail" placeholder="abc@xyz.com" type="email">
+    <input class="cardin" id="site" placeholder="www.abc.in" type="url">
+</div>`;
 }
 
-
-function wifi(){
-    t = false;
-    u = false;
-    c = false;
-    w = true;
-    document.getElementById("inn").innerHTML = `<div class="wifi">
+let wifiHtml = () => {
+    return `<div class="wifi">
     <div class="max1">
         <div class="mini">
          Network Name : 
@@ -80,15 +63,37 @@ function wifi(){
             <option value="WPA/WPA2"> <details>WPA/WPA2 PSK</option>
         </select>
     </div>
-</div>`;
+</div>`
 }
+
+
+
+
+function text(){
+    t = true;
+    document.getElementById("inn").innerHTML = textHtml();
+}
+
+function url(){
+    u = true;
+    document.getElementById("inn").innerHTML = urlHtml();
+}
+
+function card(){
+    c = true;
+    document.getElementById("inn").innerHTML = cardHtml();
+}
+
+function wifi(){
+    w = true;
+    document.getElementById("inn").innerHTML = wifiHtml();
+}
+
 
 
 function genQR()
 {
-
-    
-    var api = "https://chart.googleapis.com/chart?chf=bg,s,65432100&cht=qr&chs=";
+    const api = "https://chart.googleapis.com/chart?chf=bg,s,65432100&cht=qr&chs=";
     var img = document.getElementById("img");
     var size = document.getElementById("size").value;
 {
@@ -123,4 +128,13 @@ function genQR()
      } else {
         alert("Please Enter Data");
      }
+
+    t = false;
+    u = false;
+    c = false;
+    w = false;
+
 }
+
+
+

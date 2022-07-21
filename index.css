@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#main{
+    border: 1px solid;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.project{
+    background-color: grey;
+    border: 2px solid white;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    height: 70px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.project:hover{
+    background-color: rgb(181, 178, 178);
+}
+h1{
+    margin: 50px 0px 0px 80px;
+    text-shadow: -1px 1px 0 white,
+                  1px 1px 0 white,
+                 1px -1px 0 white,
+                -1px -1px 0 white;
+}
+
+@media all and (max-width : 400px){
+    #main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
